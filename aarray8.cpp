@@ -1,18 +1,14 @@
-//Max Subarray Sum (Brute Force Method)
+//Subarray Sum (Optimized Method)
 #include <iostream>
 using namespace std;
 void printsubarray(int arr[],int n) {
     int maxsum =INT_MIN;
     for (int i=0; i<n; i++) {
+        int sumarr =0;
         for (int j=i; j<n; j++) {
-            int sumarr =0;
-            for (int k =i; k<=j; k++) {
-                sumarr = sumarr + arr[k];
-            }
-            cout<<sumarr<<",";
+                sumarr = sumarr + arr[j];
             maxsum = max(maxsum,sumarr);
         }
-        cout<<endl;
     }
     cout<<"Maximum Subarray Sum: "<<maxsum<<endl;
 }
