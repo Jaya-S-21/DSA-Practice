@@ -6,7 +6,7 @@ class parent {
     void show() {
         cout<<"parent class show......\n";
     }
-    void hello() {                             //virtual function
+    virtual void hello() {                             //virtual function
         cout<<"parent hello....\n";
     }
 };
