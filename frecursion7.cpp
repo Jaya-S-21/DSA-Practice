@@ -6,7 +6,7 @@ int firstOccurence(vector<int>& nums, int i, int target) {
     if (nums[i] == target) {
         return i;
     }
-    if (nums[i] == nums.size()) {
+    if (i == nums.size()) {
         return -1;
     }
     return firstOccurence(nums,i+1,target);
