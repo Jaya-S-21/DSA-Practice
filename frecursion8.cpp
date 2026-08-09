@@ -13,7 +13,7 @@ int lastOccurence(vector<int>& nums, int i, int target) {
     return lastindex;
 }
 int main() {
-    vector<int> nums= {1,2,3,3,3,4};
+    vector<int> nums= {1,2,4};
     cout << lastOccurence(nums, 0, 3) <<endl;
     return 0;
 }
