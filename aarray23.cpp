@@ -4,12 +4,13 @@
 using namespace std;
 int missingNumber(vector<int>& nums) {
     int n = nums.size();
-    int currsum =0 ;
-    int expecsum = (n*(n+1))/2;
-    for (int i=0; i<n ;i++) {
-        currsum = currsum + nums[i];
+    int ans = 0;
+    for (int i =0; i<= n; i++) {
+        ans = ans ^ i;
     }
-    int ans = expecsum - currsum;
+    for (int i =0; i< n ; i++) {
+        ans = ans ^ nums[i];
+    }
     return ans;
 }
 int main() {
