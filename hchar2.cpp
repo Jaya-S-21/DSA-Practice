@@ -16,4 +16,5 @@ int main() {
     char word[] = "jayasankhla";
     toUpper(word, strlen(word));
     cout <<word<<endl;
+    return 0;
 }
