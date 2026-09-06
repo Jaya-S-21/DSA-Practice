@@ -18,6 +18,15 @@ bool repeatedSubstringPattern(string s) {
     }
     return false;
 }
+
+// bool repeatedSubstringPattern(string s) {
+//     string doub = s+s;
+//     if (doub.substr(1,doub.size()-2).find(s) != -1) {
+//         return true;
+//     }
+//     return false;
+// }
+
 int main() {
     string s = "abab";
     cout<<repeatedSubstringPattern(s)<<endl;
